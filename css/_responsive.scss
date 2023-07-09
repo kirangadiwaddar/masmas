@@ -1,0 +1,211 @@
+@media only screen and (min-width: 580px) {
+  .d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .col {
+    flex: 1;
+    padding: 0 15px;
+  }
+  .col-6 {
+    width: 50%;
+    flex: 0 0 50%;
+  }
+  .col-4 {
+    flex: 1 1 30%;
+  }
+}
+
+@media screen and (max-width: 579px) {
+  h2 {
+    margin-right: 0;
+  }
+  header {
+    .d-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+  nav {
+    display: none;
+    margin-top: 10px;
+    padding: 10px 0 10px 10px;
+    background-color: $background-color;
+    flex: 0 0 100%;
+    ul li{
+      display: block !important;
+      margin:0 0 10px 0 !important;
+      &:last-of-type {
+        margin-bottom: 0px !important;
+      }
+      a {
+        font-size: 1.4rem !important;
+      }
+    }
+  }
+  .nav-btn {
+    transition: .5s;
+    width: 30px;
+    span.nav-icon {
+      display: block;
+      width: 30px;
+      background: $text-color;
+      height: 2px;
+      margin-bottom: 6px;
+      &:first-child {
+        width: 20px;
+      }
+      &:last-child {
+        width: 20px;
+        margin: auto 0 0 auto;
+      }      
+    }    
+  }
+  .nav-btn.active {
+    transform: rotate(-45deg);
+    transition: .5s;
+  }
+
+  .container {
+    width: 100%;
+  }
+  .row {
+    margin: 0;
+  }
+  .col {
+    flex: 1;
+    padding: 0 15px;
+  }
+  .col-6 {
+    flex: 1 1 0;
+  }
+  .col.f-widget {
+    margin-bottom: 25px;
+  }
+  .flex-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .banner {
+    height: initial;
+    padding: initial;
+    padding-top: 30px;
+    .banner-img {
+      display: none;
+    }
+  }
+  .app-link {
+    a {
+      width: 35%;
+      img {
+        max-width: initial;
+        width: 100%;
+        height: 40px;
+      }
+    }
+  }
+  .app-screen {
+    .meet-icon {
+      width: 60px;
+    }
+    .community-icon {
+      right: 48px !important;
+      bottom: -50px !important;
+    }
+  }
+  .meet-img {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 998px) {
+  .col-4 {
+    flex: 1 1 30%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 1.4rem;
+  }
+  section {
+    padding: 50px 0 0;
+  }
+  .section-full {
+    padding-bottom: 50px!important;
+    h3 {
+      margin-bottom: 40px;
+    }
+  }
+  .banner {
+    .col-6 {
+      flex: 1;
+    }
+    .btn-primary {
+      font-size: 1.6rem;
+    }
+    .prm-text {
+      font-size: 1.4rem;
+    }
+  }
+  h1 {
+    font-size: 3rem;
+    line-height: initial;
+  }
+  h2 {
+    font-size: 2.4rem;
+    line-height: initial;
+    margin-right: 0px;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h5 {
+    font-size: 1.6rem;
+  }
+  .text-block p {
+    font-size: 1.4rem;
+    line-height: 28px;
+  }
+  .text-right {
+    text-align: center;
+  }
+  .app-screen {
+    margin-top: 50px;
+    .meet-icon {
+      width: 90px;
+    }
+    .community-icon {
+      width: 150px !important;
+    }
+    .dollar-icon {
+      width: 150px !important;
+      left: 0 !important;
+    }
+    .event-icon {
+      width: 150px;
+      right: 45px;
+    }
+  }
+
+  .meet-img {
+    width: 350px;
+    margin: 0 auto;
+  }
+}
